@@ -1,0 +1,21 @@
+.submit-info {
+  color: var(--clr-orange);
+  background-color: var(--clr-dark-blue);
+  border-radius: 22.5px;
+  max-width: 193px;
+  padding: 0.5rem 0 0.25rem 0;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.result-card img {
+  margin-bottom: 1.75rem;
+}
+
+.result-card .description {
+  margin-bottom: 0;
+}
