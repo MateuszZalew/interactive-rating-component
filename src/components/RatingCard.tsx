@@ -16,6 +16,12 @@ export default function RatingCard({
   ratingRange,
 }: RatingCardProps) {
   const btnArray = generateBtnArr(ratingRange);
+  const handleSubmit = () => {
+    if (submittedRating) {
+      setIsSubmitted(true);
+    }
+  };
+
   return (
     <section className="card">
       <div className="container-circle">
@@ -38,11 +44,7 @@ export default function RatingCard({
           </button>
         ))}
       </div>
-      <button
-        className="submit-btn"
-        type="button"
-        onClick={() => setIsSubmitted(true)}
-      >
+      <button className="submit-btn" type="button" onClick={handleSubmit}>
         Submit
       </button>
     </section>
